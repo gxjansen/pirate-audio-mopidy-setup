@@ -1,0 +1,13 @@
+[Unit]
+Description=Load Kinderboeken Playlist for Pirate Audio
+After=network.target mopidy.service
+Requires=mopidy.service
+
+[Service]
+Type=oneshot
+User=gxjansen
+ExecStart=/usr/bin/python3 /home/gxjansen/load_kinderboeken_playlist_fixed.py
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

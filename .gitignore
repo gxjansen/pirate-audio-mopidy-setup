@@ -1,0 +1,60 @@
+# Audio files (copyright protected)
+*.mp3
+*.flac
+*.wav
+*.m4a
+*.ogg
+*.wma
+*.m3u
+*.m3u8
+
+# Private configuration files
+mopidy.conf
+!mopidy.conf.template
+
+# Credentials and secrets
+*password*
+*secret*
+*token*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+.virtualenvs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Backup files
+*.backup
+*.bak
+*.orig

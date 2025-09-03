@@ -1,0 +1,15 @@
+[Unit]
+Description=Mopidy Music Server
+After=network.target sound.target
+
+[Service]
+Type=simple
+User=gxjansen
+Group=audio
+SupplementaryGroups=audio spi i2c gpio
+ExecStart=/home/gxjansen/.virtualenvs/mopidy/bin/mopidy --config /home/gxjansen/.config/mopidy/mopidy.conf
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

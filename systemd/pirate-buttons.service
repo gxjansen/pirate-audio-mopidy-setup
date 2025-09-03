@@ -1,0 +1,13 @@
+[Unit]
+Description=Pirate Audio Button Controller
+After=network.target mopidy.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /home/gxjansen/pirate_buttons_with_cleanup.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,56 @@
+[raspberry-gpio]
+enabled = true
+bcm5 = play_pause,active_low,250
+bcm6 = volume_down,active_low,250
+bcm16 = next,active_low,250
+bcm20 = volume_up,active_low,250
+
+[file]
+enabled = true
+media_dirs = 
+  /home/gxjansen/Music
+  /home/gxjansen/media
+show_dotfiles = false
+excluded_file_extensions =
+  .directory
+  .html
+  .jpeg
+  .jpg
+  .log
+  .nfo
+  .pdf
+  .png
+  .txt
+  .zip
+follow_symlinks = false
+metadata_timeout = 1000
+
+[local]
+media_dir = /home/gxjansen/music
+enabled = true
+
+[pidi]
+enabled = true
+display = st7789
+rotation = 90
+
+[mpd]
+hostname = 0.0.0.0
+
+[http]
+hostname = 0.0.0.0
+
+[audio]
+mixer = software
+mixer_volume = 70
+output = alsasink
+
+[alsamixer]
+enabled = true
+card = 0
+control = PCM
+
+[spotify]
+enabled = false
+client_id =
+client_secret =
