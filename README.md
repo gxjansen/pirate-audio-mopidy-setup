@@ -82,6 +82,7 @@ MIT License - See LICENSE file for details.
 
 ## Acknowledgments
 
-- [Pimoroni](https://pimoroni.com/) for the excellent Pirate Audio HAT
+- **Hardware Foundation**: Built using the excellent [Pimoroni Pirate Audio](https://github.com/pimoroni/pirate-audio) examples as reference for button handling
+- [Pimoroni](https://pimoroni.com/) for the excellent Pirate Audio HAT hardware
 - [Mopidy](https://mopidy.com/) music server project
 - [Mopidy-Iris](https://github.com/jaedb/iris) web interface
